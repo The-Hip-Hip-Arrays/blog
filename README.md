@@ -8,3 +8,6 @@ Show off our sick design skills
 
 ## How
 The blog will use mobile-first design, and will be a single page webapp. It will contain a group 'about us' and personal bios that link to the individual team members' twitters, linkedins and codewars profiles.
+
+## Features
+Animated sidebar which slides out when it has been clicked.

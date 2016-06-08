@@ -66,12 +66,39 @@ body {
 
 .img-circle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  position: relative;
+  height: 25vh;
+  width: 25vh;
 }
 
 .folder {
   height: 200px;
   width: auto;
+}
+
+.team {
+  width: 100%;
+}
+
+.images {
+  margin: auto;
+  overflow: auto;
+}
+
+.team2 {
+  display: inline-block;
+  width: 50%;
+}
+
+.teamperson {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .team2 {
+    display: block;
+  }
 }

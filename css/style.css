@@ -12,11 +12,11 @@
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.sidenav closedsidenav{
+.closedsidenav{
   width: 0;
 }
 
-.sidenav opensidenav{
+.opensidenav{
   width: 250px;
 }
 

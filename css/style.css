@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* The side navigation menu */
 .sidenav {
    height: 100%; /* 100% Full-height */
@@ -47,7 +52,7 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
    transition: margin-left .5s;
-   padding: 20px;
+   /*padding: 20px;*/
 }
 
 .mainclosedsidenav {
@@ -66,12 +71,39 @@
 
 .img-circle {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  position:relative;
+  height: 25vh;
+  width: 25vh;
 }
 
 .folder {
   height: 200px;
-  width: auto;;
+  width: auto;
+}
+
+.team {
+  width: 100%;
+}
+
+.images {
+  margin: auto;
+  overflow: auto;
+}
+
+.team2 {
+  display: inline-block;
+  width: 50%;
+}
+
+.teamperson {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50%;
+  vertical-align: top;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .team2 {
+    display: block;
+  }
 }

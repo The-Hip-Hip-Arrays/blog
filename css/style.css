@@ -47,3 +47,15 @@
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
+
+.img-circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position:relative;
+}
+
+.folder {
+  height: 200px;
+  width: auto;;
+}

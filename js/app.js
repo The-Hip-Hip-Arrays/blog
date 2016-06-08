@@ -14,20 +14,19 @@ function closeNav() {
 
 function closeImage(event) {
     console.log(event.target);
-    var target = event.target;
+    var target = event.currentTarget;
 
     if (target.className.split(' ').indexOf('teamperson') !== -1) {
       target.className = 'teamperson show';
     }
 }
 
-
 var openMenuBtn = document.querySelector('.js-open-btn'),
  closeMenuBtn = document.querySelector('.js-close-btn'),
  closeImageBtns = document.querySelectorAll('.teamperson');
 
 for (var i = 0; i < 4; i++){
-  closeImageBtns[i].addEventListener('click', closeImage, false);
+  closeImageBtns[i].addEventListener('click', closeImage);
 }
 
 openMenuBtn.addEventListener('click', openNav);

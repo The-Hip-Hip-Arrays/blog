@@ -12,9 +12,16 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
+function closeImage() {
+      this.style.display = 'none';
+}
+
 
 var openMenuBtn = document.querySelector('.js-open-btn'),
 closeMenuBtn = document.querySelector('.js-close-btn');
+closeImageBtn = document.querySelector('.img-circle');
+
 
 openMenuBtn.addEventListener('click', openNav);
 closeMenuBtn.addEventListener('click', closeNav);
+closeImageBtn.addEventListener('click', closeImage);

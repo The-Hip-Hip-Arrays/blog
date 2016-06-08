@@ -1,0 +1,24 @@
+{
+  "name": "hip-hip-blog",
+  "version": "1.0.0",
+  "description": "The Hip Hip Arrays Blog",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Hip-Hip-Arrays/blog.git"
+  },
+  "author": "The Hip Hip Arrays",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Hip-Hip-Arrays/blog/issues"
+  },
+  "homepage": "https://github.com/The-Hip-Hip-Arrays/blog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

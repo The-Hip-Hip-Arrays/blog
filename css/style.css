@@ -1,9 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #C7C0B8;
+  color: #404040;
+  font-family: sans-serif;
 }
 
-/* The side navigation menu */
 .sidenav {
    height: 100%; /* 100% Full-height */
    width: 0; /* 0 width - change this with JavaScript */
@@ -22,25 +22,22 @@ body {
 }
 
 .opensidenav{
-  width: 250px;
+  width: 30%;
 }
 
-/* The navigation menu links */
 .sidenav a {
    padding: 8px 8px 8px 32px;
    text-decoration: none;
    font-size: 25px;
-   color: #818181;
+   color: #404040;
    display: block;
    transition: 0.3s
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-   color: #f1f1f1;
+   color: #F0F1F4;
 }
 
-/* Position and style the close button (top right corner) */
 .closebtn {
    position: absolute;
    top: 0;
@@ -49,10 +46,9 @@ body {
    margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
    transition: margin-left .5s;
-   /*padding: 20px;*/
+   padding: 20px;
 }
 
 .mainclosedsidenav {
@@ -60,10 +56,9 @@ body {
 }
 
 .mainopensidenav {
-  margin-left: 250px;
+  margin-left: 25%;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
@@ -100,6 +95,18 @@ body {
   width: 50%;
   vertical-align: top;
   padding: 10px;
+}
+
+.teamperson p {
+  display: none;
+}
+
+.teamperson.toggle p{
+  display: block;
+}
+
+.teamperson.toggle img{
+  display: none;
 }
 
 @media screen and (max-width: 480px) {

@@ -12,6 +12,14 @@
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.closedsidenav{
+  width: 0;
+}
+
+.opensidenav{
+  width: 250px;
+}
+
 /* The navigation menu links */
 .sidenav a {
    padding: 8px 8px 8px 32px;
@@ -40,6 +48,14 @@
 #main {
    transition: margin-left .5s;
    padding: 20px;
+}
+
+.mainclosedsidenav {
+  margin-left: 0;
+}
+
+.mainopensidenav {
+  margin-left: 250px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

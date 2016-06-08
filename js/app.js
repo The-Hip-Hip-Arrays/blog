@@ -11,3 +11,10 @@ function closeNav() {
     document.getElementById("main").className = "mainclosedsidenav";
     document.body.style.backgroundColor = "white";
 }
+
+
+var openMenuBtn = document.querySelector('.js-open-btn'),
+closeMenuBtn = document.querySelector('.js-close-btn');
+
+openMenuBtn.addEventListener('click', openNav);
+closeMenuBtn.addEventListener('click', closeNav);

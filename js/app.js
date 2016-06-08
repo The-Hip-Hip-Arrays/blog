@@ -12,21 +12,23 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
-function closeImage(event) {
+function toggleImage(event) {
     console.log(event.target);
     var target = event.currentTarget;
 
-    if (target.className.split(' ').indexOf('teamperson') !== -1) {
-      target.className = 'teamperson show';
+    if (target.className.split(' ').indexOf('toggle') !== -1) {
+      target.className = 'teamperson';
+    } else if (target.className.split(' ').indexOf('teamperson') !== -1) {
+      target.className = 'teamperson toggle';
     }
 }
 
 var openMenuBtn = document.querySelector('.js-open-btn'),
  closeMenuBtn = document.querySelector('.js-close-btn'),
- closeImageBtns = document.querySelectorAll('.teamperson');
+ toggleImageBtns = document.querySelectorAll('.teamperson');
 
 for (var i = 0; i < 4; i++){
-  closeImageBtns[i].addEventListener('click', closeImage);
+  toggleImageBtns[i].addEventListener('click', toggleImage);
 }
 
 openMenuBtn.addEventListener('click', openNav);

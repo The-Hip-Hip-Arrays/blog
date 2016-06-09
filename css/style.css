@@ -106,9 +106,9 @@ body {
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
-
 .img-text {
-  padding-top: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .img-text a {

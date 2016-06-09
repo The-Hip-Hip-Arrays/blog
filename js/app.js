@@ -12,22 +12,54 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
+function $u(target){
+  var getClasses = function(){
+    return target.className.split(/\s+/);
+  };
+
+  var classNameIndex = function(className) {
+    return getClasses().indexOf(className);
+  };
+
+  var hasClass = function(className) {
+    return classNameIndex(className) !== -1;
+  };
+
+  var removeClass = function(className) {
+    var index = classNameIndex(className);
+    return target.className = getClasses().slice(0, index).concat(getClasses().slice(index + 1)).join(' ');
+  };
+
+  var addClass = function(className) {
+    if (hasClass(className)) return;
+    return target.className = [className].concat(getClasses()).join(' ');
+  };
+
+  var toggleClass = function(className) {
+    return hasClass(className) ? removeClass(className) : addClass(className);
+  };
+
+  return {
+    getClasses: getClasses,
+    hasClass: hasClass,
+    removeClass: removeClass,
+    addClass: addClass,
+    toggleClass: toggleClass
+  };
+}
+
 function toggleImage(event) {
-    console.log(event.target);
     var target = event.currentTarget;
 
-    if (target.className.split(' ').indexOf('toggle') !== -1) {
-      target.className = 'teamperson';
-    } else if (target.className.split(' ').indexOf('teamperson') !== -1) {
-      target.className = 'teamperson toggle';
-    }
+    if (!$u(target).hasClass('teamperson')) return;
+    $u(target).toggleClass('toggle');
 }
 
 var openMenuBtn = document.querySelector('.js-open-btn'),
  closeMenuBtn = document.querySelector('.js-close-btn'),
  toggleImageBtns = document.querySelectorAll('.teamperson');
 
-for (var i = 0; i < 4; i++){
+for (var i = 0; i < toggleImageBtns.length; i++){
   toggleImageBtns[i].addEventListener('click', toggleImage);
 }
 

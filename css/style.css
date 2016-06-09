@@ -19,21 +19,21 @@ body {
 .background-1 {
   width: 100%;
   height: 100vh;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-image: url("../assets/team_photo1.JPG");
 }
 
 .background-2 {
   width: 100%;
   height: 100vh;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-image: url("../assets/london.jpeg");
 }
 
 .background-3 {
   width: 100%;
   height: 100vh;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-image: url("../assets/laptop.jpeg");
 }
 
@@ -156,24 +156,24 @@ body {
 .teamperson {
   display: inline-block;
   box-sizing: border-box;
-  width: 50%;
+  position: relative;
   vertical-align: top;
   padding: 10px;
 }
 
-.teamperson p {
-  display: none;
+.teamperson .img-text {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all .25s;
 }
 
-.teamperson.toggle p{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 12em;
+.teamperson.toggle .img-text {
+  opacity: 1;
 }
 
 .teamperson.toggle img{
-  display: none;
+  opacity: 0;
 }
 
 .teamperson.toggle h4{
@@ -181,9 +181,8 @@ body {
 }
 
 .teamperson img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  opacity: 1;
+  transition: all .25s;
 }
 
 .nameperson {
@@ -195,20 +194,18 @@ body {
   line-height: 200px;
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  height: 225px;
+  width: 225px;
   color: black;
   font-weight: bold;
   margin: 0;
   opacity: 0;
+  transition: all .25s;
 }
 
-.nameperson:hover h4 {
+.teamperson:not(.toggle):hover h4 {
   opacity: 1;
   border-radius: 50%;
-  height: 225px;
-  width: 225px;
   background: rgba(255, 255, 255, 0.6);
   display: block;
   margin-left: auto;

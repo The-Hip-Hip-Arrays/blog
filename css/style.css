@@ -107,8 +107,8 @@ body {
 
 .img-circle {
   border-radius: 50%;
-  height: 25vh;
-  width: 25vh;
+  height: 23vw;
+  width: 23vw;
 }
 
 .folder {
@@ -122,7 +122,8 @@ body {
 
 .project1 {
   text-align: center;
-  margin-left: 325px;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   padding-top: 20px;
 }
@@ -145,7 +146,7 @@ body {
   padding-top: 200px;
 }
 
-.team2 {
+.col-2 {
   display: inline-block;
   width: 50%;
 }
@@ -184,12 +185,18 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-  .team2 {
+  .col-2 {
     display: block;
     width: 100%;
   }
+
   .images {
     padding-top: 20px;
+  }
+
+  .projects{
+    display: block;
+    width: 100%;
   }
 }
 
@@ -214,8 +221,8 @@ body {
 .nameperson:hover h4 {
   opacity: 1;
   border-radius: 50%;
-  height: 25vh;
-  width: 25vh;
+  height: 23vw;
+  width: 23vw;
   background: rgba(255, 255, 255, 0.6);
   display: block;
   margin-left: auto;

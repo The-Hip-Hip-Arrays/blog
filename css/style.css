@@ -156,6 +156,10 @@ body {
 @media screen and (max-width: 400px) {
   .team2 {
     display: block;
+    width: 100%;
+  }
+  .images {
+    padding-top: 20px;
   }
 }
 

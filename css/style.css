@@ -149,6 +149,7 @@ body {
 }
 
 .col-1 {
+  text-align: center;
   display: inline-block;
   width: 25%;
 }
@@ -188,8 +189,10 @@ body {
 
 @media screen and (max-width: 760px) {
   .col-1 {
-    display: inline-block;;
+    display: inline-block;
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .images {
@@ -206,6 +209,8 @@ body {
   .col-1 {
     display: block;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

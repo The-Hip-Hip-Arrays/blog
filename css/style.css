@@ -107,6 +107,10 @@ body {
    .sidenav a {font-size: 18px;}
 }
 
+.img-text a {
+  color: white;
+}
+
 .img-circle {
   border-radius: 50%;
   height: 225px;

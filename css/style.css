@@ -147,6 +147,10 @@ body {
   display: none;
 }
 
+.teamperson.toggle h4{
+  display: none;
+}
+
 .teamperson img {
   display: block;
   margin-left: auto;

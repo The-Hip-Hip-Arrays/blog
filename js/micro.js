@@ -1,5 +1,10 @@
 
 function $u(target){
+  if (typeof target === 'string') {
+    target = document.querySelectorAll(target);
+    target = target.length === 1 ? target[0] : target;
+  }
+
   var getClasses = function(){
     return target.className.split(/\s+/);
   };
@@ -15,16 +20,30 @@ function $u(target){
   var removeClass = function(className) {
     var index = classNameIndex(className),
       classes = getClasses();
-    return target.className = classes.slice(0, index).concat(classes.slice(index + 1)).join(' ');
+    target.className = classes.slice(0, index).concat(classes.slice(index + 1)).join(' ');
+    return this;
   };
 
   var addClass = function(className) {
     if (hasClass(className)) return;
-    return target.className = [className].concat(getClasses()).join(' ');
+    target.className = [className].concat(getClasses()).join(' ');
+    return this;
   };
 
   var toggleClass = function(className) {
-    return hasClass(className) ? removeClass(className) : addClass(className);
+    hasClass(className) ? removeClass(className) : addClass(className);
+    return this;
+  };
+
+  var forEach = function(callback) {
+    if (typeof callback !== 'function') return;
+    if (target.length) [].forEach.call(target, callback);
+    return this;
+  };
+
+  var click = function(callback) {
+    if (typeof callback !== 'function') return;
+    target.addEventListener('click', callback);
   };
 
   return {
@@ -32,6 +51,8 @@ function $u(target){
     hasClass: hasClass,
     removeClass: removeClass,
     addClass: addClass,
-    toggleClass: toggleClass
+    toggleClass: toggleClass,
+    forEach: forEach,
+    click: click
   };
 }

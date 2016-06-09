@@ -146,9 +146,9 @@ body {
   padding-top: 200px;
 }
 
-.col-2 {
+.col-1 {
   display: inline-block;
-  width: 50%;
+  width: 25%;
 }
 
 .teamperson {
@@ -185,9 +185,9 @@ body {
 }
 
 @media screen and (max-width: 760px) {
-  .col-2 {
-    display: block;
-    width: 100%;
+  .col-1 {
+    display: inline-block;;
+    width: 50%;
   }
 
   .images {
@@ -195,6 +195,13 @@ body {
   }
 
   .projects{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .col-1 {
     display: block;
     width: 100%;
   }

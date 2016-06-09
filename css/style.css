@@ -114,3 +114,27 @@ body {
     display: block;
   }
 }
+
+.nameperson {
+  display: inline-block;
+  position: relative;
+}
+
+.nameperson p {
+  text-align: center;
+  line-height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  opacity: 0;
+}
+
+.nameperson:hover p {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.6);
+}

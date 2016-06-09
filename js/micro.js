@@ -2,11 +2,11 @@
 function $u(target){
   if (typeof target === 'string') {
     target = document.querySelectorAll(target);
-    target = target.length === 1 ? target[0] : target;
+    if (target.length === 1) target = target[0];
   }
 
   var getClasses = function(){
-    return target.className.split(/\s+/);
+    return target.classList;
   };
 
   var classNameIndex = function(className) {
@@ -14,24 +14,21 @@ function $u(target){
   };
 
   var hasClass = function(className) {
-    return classNameIndex(className) !== -1;
+    return target.classList.contains(className);
   };
 
-  var removeClass = function(className) {
-    var index = classNameIndex(className),
-      classes = getClasses();
-    target.className = classes.slice(0, index).concat(classes.slice(index + 1)).join(' ');
+  var removeClass = function(/* arguments */) {
+    target.classList.remove.apply(target.classList, arguments);
     return this;
   };
 
-  var addClass = function(className) {
-    if (hasClass(className)) return;
-    target.className = [className].concat(getClasses()).join(' ');
+  var addClass = function(/* arguments */) {
+    target.classList.add.apply(target.classList, arguments);
     return this;
   };
 
   var toggleClass = function(className) {
-    hasClass(className) ? removeClass(className) : addClass(className);
+    target.classList.toggle(className);
     return this;
   };
 

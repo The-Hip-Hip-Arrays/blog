@@ -308,6 +308,8 @@ h1 {
 
 .c-hamburger--htx {
   background-color: #f2f2f2;
+  position: fixed;
+  z-index: 100;
 }
 
 @media screen and (max-width: 900px) {

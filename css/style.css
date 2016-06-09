@@ -109,8 +109,8 @@ body {
 
 .img-circle {
   border-radius: 50%;
-  height: 23vw;
-  width: 23vw;
+  height: 225px;
+  width: 225px;
 }
 
 .folder {
@@ -144,11 +144,11 @@ body {
 
 .images {
   margin: auto;
-  overflow: auto;
   padding-top: 200px;
 }
 
 .col-1 {
+  text-align: center;
   display: inline-block;
   width: 25%;
 }
@@ -186,29 +186,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (max-width: 760px) {
-  .col-1 {
-    display: inline-block;;
-    width: 50%;
-  }
-
-  .images {
-    padding-top: 20px;
-  }
-
-  .projects{
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 384px) {
-  .col-1 {
-    display: block;
-    width: 100%;
-  }
-}
-
 .nameperson {
   position: relative;
 }
@@ -230,8 +207,8 @@ body {
 .nameperson:hover h4 {
   opacity: 1;
   border-radius: 50%;
-  height: 23vw;
-  width: 23vw;
+  height: 225px;
+  width: 225px;
   background: rgba(255, 255, 255, 0.6);
   display: block;
   margin-left: auto;
@@ -330,4 +307,60 @@ h1 {
 
 .c-hamburger--htx {
   background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 900px) {
+  .col-1 {
+    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .nameperson:hover h4 {
+    height: 150px;
+    width: 150px;
+  }
+
+  .img-text p {
+    font-size: 15px;
+  }
+
+  .images {
+    padding-top: 20px;
+  }
+
+  .projects{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .col-1 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-circle {
+    height: 125px;
+    width: 125px;
+  }
+
+  .nameperson:hover h4 {
+    height: 125px;
+    width: 125px;
+  }
+
+  .img-text p {
+    font-size: 12px;
+  }
+
 }

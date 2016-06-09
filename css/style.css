@@ -134,3 +134,32 @@ body {
     display: block;
   }
 }
+
+.nameperson {
+  position: relative;
+}
+
+.nameperson h4 {
+  text-align: center;
+  line-height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  opacity: 0;
+}
+
+.nameperson:hover h4 {
+  opacity: 1;
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

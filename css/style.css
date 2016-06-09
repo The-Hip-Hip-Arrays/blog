@@ -187,33 +187,6 @@ body {
   margin-right: auto;
 }
 
-@media screen and (max-width: 760px) {
-  .col-1 {
-    display: inline-block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .images {
-    padding-top: 20px;
-  }
-
-  .projects{
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 384px) {
-  .col-1 {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .nameperson {
   position: relative;
 }
@@ -377,4 +350,40 @@ h1 {
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
+}
+
+@media screen and (max-width: 760px) {
+  .col-1 {
+    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-text p {
+    font-size: 15px;
+  }
+
+  .images {
+    padding-top: 20px;
+  }
+
+  .projects{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .col-1 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-text p {
+    font-size: 12px;
+  }
+
 }

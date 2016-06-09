@@ -136,11 +136,10 @@ body {
 }
 
 .nameperson {
-  display: inline-block;
   position: relative;
 }
 
-.nameperson p {
+.nameperson h4 {
   text-align: center;
   line-height: 200px;
   position: absolute;
@@ -154,7 +153,13 @@ body {
   opacity: 0;
 }
 
-.nameperson:hover p {
+.nameperson:hover h4 {
   opacity: 1;
+  border-radius: 50%;
+  height: 25vh;
+  width: 25vh;
   background: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

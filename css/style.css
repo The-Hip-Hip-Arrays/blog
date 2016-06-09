@@ -109,8 +109,8 @@ body {
 
 .img-circle {
   border-radius: 50%;
-  height: 23vw;
-  width: 23vw;
+  height: 225px;
+  width: 225px;
 }
 
 .folder {
@@ -144,7 +144,6 @@ body {
 
 .images {
   margin: auto;
-  overflow: auto;
   padding-top: 200px;
 }
 
@@ -208,8 +207,8 @@ body {
 .nameperson:hover h4 {
   opacity: 1;
   border-radius: 50%;
-  height: 23vw;
-  width: 23vw;
+  height: 225px;
+  width: 225px;
   background: rgba(255, 255, 255, 0.6);
   display: block;
   margin-left: auto;
@@ -352,12 +351,22 @@ h1 {
   transition-delay: 0s, 0.3s;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .col-1 {
     display: inline-block;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .img-circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .nameperson:hover h4 {
+    height: 150px;
+    width: 150px;
   }
 
   .img-text p {
@@ -380,6 +389,16 @@ h1 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .img-circle {
+    height: 125px;
+    width: 125px;
+  }
+
+  .nameperson:hover h4 {
+    height: 125px;
+    width: 125px;
   }
 
   .img-text p {

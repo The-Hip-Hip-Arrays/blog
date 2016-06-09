@@ -3,13 +3,6 @@ body {
   color: #404040;
   font-family: sans-serif;
   margin: 0;
-  padding: 0;
-}
-
-.about-us h2 {
-    font-family: Cambria;
-    font-size: 60px;
-    color: #f2f2f2;
 }
 
 .filter {
@@ -36,7 +29,6 @@ body {
   background-size: 100% 100%;
   background-image: url("../assets/laptop.jpeg");
 }
-
 .about-us {
   padding-top: 100px;
   font-family: Cambria;
@@ -91,7 +83,6 @@ body {
 #main {
    transition: margin-left .5s;
    padding: 0px;
-   background-color: #C7C0B8;
 }
 
 .mainclosedsidenav {
@@ -114,32 +105,12 @@ body {
 }
 
 .folder {
-  height: auto;
-  width: 25vh;
-}
-
-.projects {
-  width: 100%;
-}
-
-.project1 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  padding-top: 20px;
+  height: 200px;
+  width: auto;
 }
 
 .team {
   width: 100%;
-}
-
-.team h2 {
-  padding-top: 5px;
-  font-family: Cambria;
-  font-size: 60px;
-  text-align: center;
-  color: #f2f2f2;
 }
 
 .images {
@@ -161,22 +132,21 @@ body {
   padding: 10px;
 }
 
-.teamperson p {
-  display: none;
+.teamperson .img-text {
+  opacity: 0;
 }
 
-.teamperson.toggle p{
+.teamperson.toggle .img-text {
+  background-color: rgba(255, 255, 255, 0.5);
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 12em;
+  padding: 0.5em;
+  opacity: 1;
 }
 
-.teamperson.toggle img{
-  display: none;
-}
-
-.teamperson.toggle h4{
+.teamperson.toggle .nameperson{
   display: none;
 }
 
@@ -213,7 +183,7 @@ body {
   position: relative;
 }
 
-.nameperson h4 {
+.nameperson h4{
   text-align: center;
   line-height: 200px;
   position: absolute;
@@ -225,9 +195,10 @@ body {
   font-weight: bold;
   margin: 0;
   opacity: 0;
+  transition: all .2s;
 }
 
-.nameperson:hover h4 {
+.nameperson:hover h4{
   opacity: 1;
   border-radius: 50%;
   height: 23vw;
@@ -236,98 +207,4 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-h1 {
-  font-family: Cambria;
-  font-size: 60px;
-  text-align: center;
-  color: #f2f2f2;
-  padding-top: 5px;
-  margin: 0;
-}
-
-.projects h2 {
-  font-family: Cambria;
-  font-size: 60px;
-  text-align: center;
-  color: #f2f2f2;
-  padding-top: 5px;
-  margin: 0;
-}
-
-.projects p {
-    font-family: Cambria;
-    font-size: 18px;
-    color: #f2f2f2;
-}
-
-.team p {
-  font-family: Cambria;
-  font-size: 18px;
-  color: #f2f2f2;
-}
-
-title {
-  display: inline-block;
-  height: 50px;
-}
-
-h1 {
-  diplay: inline-block;
-}
-
-.c-hamburger {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 96px;
-  height: 96px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.c-hamburger:focus {
-  outline: none;
-}
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 44px;
-  left: 18px;
-  right: 18px;
-  height: 8px;
-  background: white;
-}
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  background-color: #fff;
-  content: "";
-}
-
-.c-hamburger span::before {
-  top: -20px;
-}
-
-.c-hamburger span::after {
-  bottom: -20px;
-}
-
-.c-hamburger--htx {
-  background-color: #f2f2f2;
 }

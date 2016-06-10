@@ -314,6 +314,37 @@ title {
 }
 
 @media screen and (max-width: 900px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .about-us h2 {
+    font-size: 40px;
+  }
+
+  .team h2 {
+    font-size: 40px;
+  }
+
+  .projects h2 {
+    font-size: 40px;
+  }
+
+  .sidenav a {
+    font-size: 16px;
+    padding: 8px 8px 8px 10px;
+  }
+
+  .c-hamburger {
+      height: 75px;
+      width: 75px;
+  }
+
+  .c-hamburger--htx {
+    position: relative;
+  }
+
   .col-1 {
     display: inline-block;
     width: 50%;

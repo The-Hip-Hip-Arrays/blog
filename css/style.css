@@ -180,6 +180,8 @@ body {
 
 .teamperson.toggle .img-text {
   opacity: 1;
+  pointer-events: all;
+  cursor: crosshair;
 }
 
 .teamperson.toggle img{

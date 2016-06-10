@@ -389,6 +389,10 @@ title {
     width: 125px;
   }
 
+  .about-us p {
+    font-size: 16px;
+  }
+
   .nameperson:hover h4 {
     height: 125px;
     width: 125px;

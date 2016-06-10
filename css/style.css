@@ -227,6 +227,7 @@ h1 {
   color: #f2f2f2;
   padding-top: 5px;
   margin: 0;
+  diplay: inline-block;
 }
 
 .projects h2 {
@@ -253,10 +254,6 @@ h1 {
 title {
   display: inline-block;
   height: 50px;
-}
-
-h1 {
-  diplay: inline-block;
 }
 
 .c-hamburger {
@@ -317,6 +314,27 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .about-us h2 {
+    font-size: 40px;
+  }
+
+  .team h2 {
+    font-size: 40px;
+  }
+
+  .projects h2 {
+    font-size: 40px;
+  }
+
+  .c-hamburger--htx {
+    position: relative;
+  }
+
   .col-1 {
     display: inline-block;
     width: 50%;
@@ -325,13 +343,13 @@ h1 {
   }
 
   .img-circle {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
   }
 
   .nameperson:hover h4 {
-    height: 150px;
-    width: 150px;
+    height: 175px;
+    width: 175px;
   }
 
   .img-text p {
@@ -359,6 +377,15 @@ h1 {
   .img-circle {
     height: 125px;
     width: 125px;
+  }
+
+  .sidenav a {
+    font-size: 16px;
+    padding: 8px 8px 8px 10px;
+  }
+
+  .about-us p {
+    font-size: 16px;
   }
 
   .nameperson:hover h4 {

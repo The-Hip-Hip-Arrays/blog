@@ -351,6 +351,11 @@ title {
     width: 175px;
   }
 
+  .sidenav a {
+    font-size: 20px;
+    padding: 8px 8px 8px 12px;
+  }
+
   .nameperson:hover h4 {
     height: 175px;
     width: 175px;

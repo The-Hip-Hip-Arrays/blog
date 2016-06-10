@@ -370,6 +370,7 @@ title {
   .projects{
     display: block;
     width: 100%;
+    background-size: cover;
   }
 }
 
@@ -402,6 +403,18 @@ title {
 
   .img-text p {
     font-size: 12px;
+  }
+
+  .projects{
+    display: block;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .background-3 {
+    width: 100%;
+    height: auto;;
+    background-size: cover;
   }
 
 }

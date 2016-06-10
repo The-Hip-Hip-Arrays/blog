@@ -17,13 +17,13 @@ function $u(target){
     return target.classList.contains(className);
   };
 
-  var removeClass = function(/* arguments */) {
-    target.classList.remove.apply(target.classList, arguments);
+  var removeClass = function(className) {
+    target.classList.remove(className);
     return this;
   };
 
-  var addClass = function(/* arguments */) {
-    target.classList.add.apply(target.classList, arguments);
+  var addClass = function(className) {
+    target.classList.add(className));
     return this;
   };
 

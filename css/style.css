@@ -227,6 +227,7 @@ h1 {
   color: #f2f2f2;
   padding-top: 5px;
   margin: 0;
+  diplay: inline-block;
 }
 
 .projects h2 {
@@ -253,10 +254,6 @@ h1 {
 title {
   display: inline-block;
   height: 50px;
-}
-
-h1 {
-  diplay: inline-block;
 }
 
 .c-hamburger {

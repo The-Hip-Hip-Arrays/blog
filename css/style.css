@@ -21,6 +21,7 @@ body {
   height: 100vh;
   background-size: auto 100%;
   background-image: url("../assets/team_photo1.JPG");
+  background-repeat: no-repeat;
 }
 
 .background-2 {
@@ -28,6 +29,7 @@ body {
   height: 100vh;
   background-size: auto 100%;
   background-image: url("../assets/london.jpeg");
+  background-repeat: no-repeat;
 }
 
 .background-3 {
@@ -35,6 +37,7 @@ body {
   height: 100vh;
   background-size: auto 100%;
   background-image: url("../assets/laptop.jpeg");
+  background-repeat: no-repeat;
 }
 
 .about-us {

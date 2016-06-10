@@ -23,7 +23,7 @@ function $u(target){
   };
 
   var addClass = function(className) {
-    target.classList.add(className));
+    target.classList.add(className);
     return this;
   };
 

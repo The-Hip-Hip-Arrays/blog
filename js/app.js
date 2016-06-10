@@ -24,6 +24,7 @@ function toggleImage(event) {
   var target = event.currentTarget;
 
   if ($u(target).hasClass('teamperson')) {
+    console.log(target);
     $u(target).toggleClass('toggle');
   }
 }

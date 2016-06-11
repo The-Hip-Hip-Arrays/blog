@@ -6,10 +6,19 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 .about-us h2 {
     font-family: Cambria;
     font-size: 60px;
     color: #f2f2f2;
+}
+
+.table {
+  display: table;
+  width: 100%;
 }
 
 .filter {
@@ -17,7 +26,7 @@ body {
   height: 100%;
 }
 
-[class*="background-"]{
+[class*="slide-"]{
   height: 100vh;
   background: url(images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -26,15 +35,24 @@ body {
   background-size: cover;
 }
 
-.background-1 {
-  background-image: url("../assets/team_photo1.JPG");
+.slide-0 {
+  background-image: url("../assets/folders.jpeg");
 }
 
-.background-2 {
+  .title {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.slide-1 {
+  background-image: url("../assets/team_photo.jpg");
+}
+
+.slide-2 {
   background-image: url("../assets/london.jpeg");
 }
 
-.background-3 {
+.slide-3 {
   background-image: url("../assets/laptop.jpeg");
 }
 
@@ -104,7 +122,6 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-   .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
 
@@ -233,7 +250,6 @@ h1 {
   color: #f2f2f2;
   padding-top: 5px;
   margin: 0;
-  diplay: inline-block;
 }
 
 .projects h2 {
@@ -338,10 +354,6 @@ title {
     font-size: 40px;
   }
 
-  .c-hamburger--htx {
-    position: relative;
-  }
-
   .col-1 {
     display: inline-block;
     width: 50%;
@@ -380,7 +392,7 @@ title {
 
 @media screen and (max-width: 384px) {
 
-  [class*="background-"] {
+  [class*="slide-"] {
     height: auto;
   }
 

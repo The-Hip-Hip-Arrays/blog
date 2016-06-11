@@ -67,23 +67,19 @@ h1, h2, h3 {
 
 .sidenav {
    height: 100%; /* 100% Full-height */
-   width: 0; /* 0 width - change this with JavaScript */
+   width: 200px;
    position: fixed; /* Stay in place */
    z-index: 1; /* Stay on top */
    top: 0;
-   left: 0;
+   left: -200px;
    background-color: #111; /* Black*/
    overflow-x: hidden; /* Disable horizontal scroll */
    padding-top: 100px; /* Place content 60px from the top */
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.closedsidenav{
-  width: 0;
-}
-
 .opensidenav{
-  width: 30%;
+  transform: translate3d(200px, 0, 0);
 }
 
 .sidenav a {
@@ -99,27 +95,12 @@ h1, h2, h3 {
    color: #F0F1F4;
 }
 
-.closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px !important;
-   margin-left: 50px;
-}
-
 #main {
    transition: margin-left .5s;
    padding: 0px;
    background-color: #C7C0B8;
 }
 
-.mainclosedsidenav {
-  margin-left: 0;
-}
-
-.mainopensidenav {
-  margin-left: 25%;
-}
 
 @media screen and (max-height: 450px) {
    .sidenav a {font-size: 18px;}
@@ -271,11 +252,6 @@ h1 {
   font-family: Cambria;
   font-size: 18px;
   color: #f2f2f2;
-}
-
-title {
-  display: inline-block;
-  height: 50px;
 }
 
 .c-hamburger {

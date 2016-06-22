@@ -6,10 +6,19 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 .about-us h2 {
     font-family: Cambria;
     font-size: 60px;
     color: #f2f2f2;
+}
+
+.table {
+  display: table;
+  width: 100%;
 }
 
 .filter {
@@ -17,7 +26,7 @@ body {
   height: 100%;
 }
 
-[class*="background-"]{
+[class*="slide-"]{
   height: 100vh;
   background: url(images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -26,15 +35,24 @@ body {
   background-size: cover;
 }
 
-.background-1 {
-  background-image: url("../assets/team_photo1.JPG");
+.slide-0 {
+  background-image: url("../assets/folders.jpeg");
 }
 
-.background-2 {
+  .title {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.slide-1 {
+  background-image: url("../assets/team_photo.jpg");
+}
+
+.slide-2 {
   background-image: url("../assets/london.jpeg");
 }
 
-.background-3 {
+.slide-3 {
   background-image: url("../assets/laptop.jpeg");
 }
 
@@ -49,23 +67,19 @@ body {
 
 .sidenav {
    height: 100%; /* 100% Full-height */
-   width: 0; /* 0 width - change this with JavaScript */
+   width: 200px;
    position: fixed; /* Stay in place */
    z-index: 1; /* Stay on top */
    top: 0;
-   left: 0;
+   left: -200px;
    background-color: #111; /* Black*/
    overflow-x: hidden; /* Disable horizontal scroll */
    padding-top: 100px; /* Place content 60px from the top */
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.closedsidenav{
-  width: 0;
-}
-
 .opensidenav{
-  width: 30%;
+  transform: translate3d(200px, 0, 0);
 }
 
 .sidenav a {
@@ -81,30 +95,14 @@ body {
    color: #F0F1F4;
 }
 
-.closebtn {
-   position: absolute;
-   top: 0;
-   right: 25px;
-   font-size: 36px !important;
-   margin-left: 50px;
-}
-
 #main {
    transition: margin-left .5s;
    padding: 0px;
    background-color: #C7C0B8;
 }
 
-.mainclosedsidenav {
-  margin-left: 0;
-}
-
-.mainopensidenav {
-  margin-left: 25%;
-}
 
 @media screen and (max-height: 450px) {
-   .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
 
@@ -233,7 +231,6 @@ h1 {
   color: #f2f2f2;
   padding-top: 5px;
   margin: 0;
-  diplay: inline-block;
 }
 
 .projects h2 {
@@ -255,11 +252,6 @@ h1 {
   font-family: Cambria;
   font-size: 18px;
   color: #f2f2f2;
-}
-
-title {
-  display: inline-block;
-  height: 50px;
 }
 
 .c-hamburger {
@@ -338,10 +330,6 @@ title {
     font-size: 40px;
   }
 
-  .c-hamburger--htx {
-    position: relative;
-  }
-
   .col-1 {
     display: inline-block;
     width: 50%;
@@ -380,7 +368,7 @@ title {
 
 @media screen and (max-width: 384px) {
 
-  [class*="background-"] {
+  [class*="slide-"] {
     height: auto;
   }
 
